@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkabteilung_mitte_ii=globalThis.webpackChunkabteilung_mitte_ii||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Wahl des Landesvorstands","permalink":"/blog/wahl-des-landesvorstands","unlisted":false,"date":"2024-04-08T22:00:00.000Z"}]}')}}]);

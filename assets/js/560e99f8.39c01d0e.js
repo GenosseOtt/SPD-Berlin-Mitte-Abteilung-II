@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkabteilung_mitte_ii=self.webpackChunkabteilung_mitte_ii||[]).push([[987],{3897:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/wahl","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkabteilung_mitte_ii=globalThis.webpackChunkabteilung_mitte_ii||[]).push([[121],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"landesvorstand","permalink":"/blog/tags/landesvorstand","count":1},{"label":"wahl","permalink":"/blog/tags/wahl","count":1},{"label":"befragung","permalink":"/blog/tags/befragung","count":1}]}')}}]);

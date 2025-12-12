@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkabteilung_mitte_ii=self.webpackChunkabteilung_mitte_ii||[]).push([[104],{3769:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

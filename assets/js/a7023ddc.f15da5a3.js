@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkabteilung_mitte_ii=self.webpackChunkabteilung_mitte_ii||[]).push([[713],{3457:a=>{a.exports=JSON.parse('[{"label":"landesvorstand","permalink":"/blog/tags/landesvorstand","count":1},{"label":"wahl","permalink":"/blog/tags/wahl","count":1},{"label":"befragung","permalink":"/blog/tags/befragung","count":1}]')}}]);

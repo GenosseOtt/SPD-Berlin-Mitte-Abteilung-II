@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkabteilung_mitte_ii=self.webpackChunkabteilung_mitte_ii||[]).push([[787],{6846:e=>{e.exports=JSON.parse('{"label":"befragung","permalink":"/blog/tags/befragung","allTagsPath":"/blog/tags","count":1}')}}]);
