@@ -17,7 +17,6 @@ function style(primaryAbteilung: boolean, highlight: boolean) {
   };
 
 }
-
 export default function AbteilungsMap() {
   return (
     <MapContainer style={{ height: "400px" }} center={[52.52, 13.39]} zoom={13}>
