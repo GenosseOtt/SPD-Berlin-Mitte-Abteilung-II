@@ -1681,6 +1681,11 @@
     url-loader "^4.1.1"
     webpack "^5.73.0"
 
+"@esbuild/darwin-arm64@0.25.12":
+  version "0.25.12"
+  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.25.12.tgz"
+  integrity sha512-N3zl+lxHCifgIlcMUP5016ESkeQjLj/959RxxNYIthIg+CQHInujFuXeWbWMgnTo4cp5XVHqFPmpyu9J65C1Yg==
+
 "@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
   version "9.3.0"
   resolved "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.3.0.tgz"
@@ -3941,6 +3946,48 @@ esast-util-from-js@^2.0.0:
     esast-util-from-estree "^2.0.0"
     vfile-message "^4.0.0"
 
+esbuild-loader@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.npmjs.org/esbuild-loader/-/esbuild-loader-4.4.0.tgz"
+  integrity sha512-4J+hXTpTtEdzUNLoY8ReqDNJx2NoldfiljRCiKbeYUuZmVaiJeDqFgyAzz8uOopaekwRoCcqBFyEroGQLFVZ1g==
+  dependencies:
+    esbuild "^0.25.0"
+    get-tsconfig "^4.10.1"
+    loader-utils "^2.0.4"
+    webpack-sources "^1.4.3"
+
+esbuild@^0.25.0:
+  version "0.25.12"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz"
+  integrity sha512-bbPBYYrtZbkt6Os6FiTLCTFxvq4tt3JKall1vRwshA3fdVztsLAatFaZobhkBC8/BrPetoa0oksYoKXoG4ryJg==
+  optionalDependencies:
+    "@esbuild/aix-ppc64" "0.25.12"
+    "@esbuild/android-arm" "0.25.12"
+    "@esbuild/android-arm64" "0.25.12"
+    "@esbuild/android-x64" "0.25.12"
+    "@esbuild/darwin-arm64" "0.25.12"
+    "@esbuild/darwin-x64" "0.25.12"
+    "@esbuild/freebsd-arm64" "0.25.12"
+    "@esbuild/freebsd-x64" "0.25.12"
+    "@esbuild/linux-arm" "0.25.12"
+    "@esbuild/linux-arm64" "0.25.12"
+    "@esbuild/linux-ia32" "0.25.12"
+    "@esbuild/linux-loong64" "0.25.12"
+    "@esbuild/linux-mips64el" "0.25.12"
+    "@esbuild/linux-ppc64" "0.25.12"
+    "@esbuild/linux-riscv64" "0.25.12"
+    "@esbuild/linux-s390x" "0.25.12"
+    "@esbuild/linux-x64" "0.25.12"
+    "@esbuild/netbsd-arm64" "0.25.12"
+    "@esbuild/netbsd-x64" "0.25.12"
+    "@esbuild/openbsd-arm64" "0.25.12"
+    "@esbuild/openbsd-x64" "0.25.12"
+    "@esbuild/openharmony-arm64" "0.25.12"
+    "@esbuild/sunos-x64" "0.25.12"
+    "@esbuild/win32-arm64" "0.25.12"
+    "@esbuild/win32-ia32" "0.25.12"
+    "@esbuild/win32-x64" "0.25.12"
+
 escalade@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz"
@@ -4414,6 +4461,13 @@ get-stream@^6.0.0:
   version "6.0.1"
   resolved "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
+
+get-tsconfig@^4.10.1:
+  version "4.13.0"
+  resolved "https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz"
+  integrity sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==
+  dependencies:
+    resolve-pkg-maps "^1.0.0"
 
 github-slugger@^1.4.0:
   version "1.5.0"
@@ -7445,6 +7499,11 @@ resolve-pathname@^3.0.0:
   resolved "https://registry.npmjs.org/resolve-pathname/-/resolve-pathname-3.0.0.tgz"
   integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
+resolve-pkg-maps@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz"
+  integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
+
 resolve@^1.1.6, resolve@^1.14.2, resolve@^1.3.2:
   version "1.22.6"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.6.tgz"
@@ -7876,6 +7935,11 @@ sort-css-media-queries@2.1.0:
   resolved "https://registry.npmjs.org/sort-css-media-queries/-/sort-css-media-queries-2.1.0.tgz"
   integrity sha512-IeWvo8NkNiY2vVYdPa27MCQiR0MN0M80johAYFVxWWXQ44KU84WNxjslwBHmc/7ZL2ccwkM7/e6S5aiKZXm7jA==
 
+source-list-map@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/source-list-map/-/source-list-map-2.0.1.tgz"
+  integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
+
 source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz"
@@ -7894,7 +7958,7 @@ source-map@^0.5.0:
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
   integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
 
-source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0:
+source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
@@ -8723,12 +8787,20 @@ webpack-merge@^5.8.0, webpack-merge@^5.9.0:
     flat "^5.0.2"
     wildcard "^2.0.0"
 
+webpack-sources@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-1.4.3.tgz"
+  integrity sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
+  dependencies:
+    source-list-map "^2.0.0"
+    source-map "~0.6.1"
+
 webpack-sources@^3.2.2, webpack-sources@^3.2.3:
   version "3.2.3"
   resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-"webpack@^4.0.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", webpack@^5.0.0, webpack@^5.1.0, webpack@^5.20.0, webpack@^5.73.0, webpack@^5.95.0, "webpack@>= 4", webpack@>=2, "webpack@>=4.41.1 || 5.x", "webpack@3 || 4 || 5":
+"webpack@^4.0.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^4.40.0 || ^5.0.0", webpack@^5.0.0, webpack@^5.1.0, webpack@^5.20.0, webpack@^5.73.0, webpack@^5.95.0, "webpack@>= 4", webpack@>=2, "webpack@>=4.41.1 || 5.x", "webpack@3 || 4 || 5":
   version "5.97.1"
   resolved "https://registry.npmjs.org/webpack/-/webpack-5.97.1.tgz"
   integrity sha512-EksG6gFY3L1eFMROS/7Wzgrii5mBAFe4rIr3r2BTfo7bcc+DWwFZ4OJ/miOuHJO/A85HwyI4eQ0F6IKXesO7Fg==
