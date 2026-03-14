@@ -8,8 +8,12 @@
   background: #E3000F;
   color: #fff;
   padding: 12px 24px;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: var(--ifm-navbar-height, 70px);
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .newsBannerContent {
@@ -85,6 +89,7 @@
   overflow: hidden;
   background: #000;
   color: #fff;
+  padding-top: 60px;
 }
 
 .heroBackground {
