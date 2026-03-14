@@ -168,7 +168,7 @@ export default function Home() {
         <div className={styles.actionGrid}>
           <div className={styles.actionCard}>
             <div className={styles.actionIcon}>
-              <img src="/img/svg/SPD_Sprechblase_1_schwarz-frei_RGB.svg" alt="" />
+              <img src="/img/svg/SPD_Sprechblase_1_schwarz-frei_RGB.svg" alt="" className="theme-icon" />
             </div>
             <h3>Direkte Kommunikation</h3>
             <p>WhatsApp, Instagram, persönliche Treffen – wir sind da, wo du bist.</p>
@@ -176,7 +176,7 @@ export default function Home() {
 
           <div className={styles.actionCard}>
             <div className={styles.actionIcon}>
-              <img src="/img/svg/SPD_Divers_2_schwarz-frei_RGB.svg" alt="" />
+              <img src="/img/svg/SPD_Divers_2_schwarz-frei_RGB.svg" alt="" className="theme-icon" />
             </div>
             <h3>Offene Community</h3>
             <p>Keine Mitgliedschaft nötig. Komm vorbei, mach mit, bring deine Ideen ein.</p>
@@ -184,7 +184,7 @@ export default function Home() {
 
           <div className={styles.actionCard}>
             <div className={styles.actionIcon}>
-              <img src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg" alt="" />
+              <img src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg" alt="" className="theme-icon" />
             </div>
             <h3>Echte Lösungen</h3>
             <p>Von Verkehrswende bis Gentrifizierung – wir packen an, was wirklich zählt.</p>
