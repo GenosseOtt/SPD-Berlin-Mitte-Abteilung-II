@@ -108,7 +108,23 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/SPD_Mitte_Preview.png',
+      image: 'img/logo.png',
+      metadata: [
+        {name: 'description', content: 'SPD Alexanderplatz - Politik aus der Mitte. Für einen lebenswerten Kiez: Für Alle.'},
+        {name: 'keywords', content: 'SPD, Berlin Mitte, Alexanderplatz, Politik, Kiez, Sozialdemokraten'},
+        // Open Graph
+        {property: 'og:title', content: 'SPD Alexanderplatz - Berlin-Mitte'},
+        {property: 'og:description', content: 'Politik aus der Mitte. Für einen lebenswerten Kiez: Für Alle.'},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:url', content: 'https://spd-alex.de'},
+        {property: 'og:image', content: 'https://spd-alex.de/img/logo.png'},
+        {property: 'og:locale', content: 'de_DE'},
+        // Twitter Card
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:title', content: 'SPD Alexanderplatz - Berlin-Mitte'},
+        {name: 'twitter:description', content: 'Politik aus der Mitte. Für einen lebenswerten Kiez: Für Alle.'},
+        {name: 'twitter:image', content: 'https://spd-alex.de/img/logo.png'},
+      ],
       navbar: {
         title: 'Berlin-Mitte / Alexanderplatz',
         logo: {
