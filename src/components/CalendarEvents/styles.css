@@ -95,7 +95,7 @@
   width: 16px;
   height: 16px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
+  opacity: 0.7;
 }
 
 .event-description {
@@ -131,7 +131,7 @@
 }
 
 [data-theme="dark"] .event-location img {
-  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
+  opacity: 0.7;
 }
 
 [data-theme="dark"] .event-description {

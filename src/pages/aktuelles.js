@@ -75,11 +75,11 @@ export default function Aktuelles() {
                   src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg"
                   alt=""
                   style={{
-                    width: '22px',
-                    height: '22px',
+                    width: '24px',
+                    height: '24px',
                     flexShrink: 0,
                     marginTop: '2px',
-                    filter: 'brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%)'
+                    opacity: 0.7
                   }}
                 />
                 <span><strong>Tipp:</strong> Klicke auf "Kalender abonnieren" um die Termine automatisch in deiner

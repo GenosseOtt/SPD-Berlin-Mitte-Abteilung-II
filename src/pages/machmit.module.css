@@ -85,16 +85,16 @@
 }
 
 .cardIcon img {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
+  opacity: 0.85;
   transition: all 0.3s ease;
 }
 
 .ctaCard:hover .cardIcon img {
   transform: scale(1.1);
-  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%) drop-shadow(0 4px 8px rgba(227,0,15,0.3));
+  opacity: 1;
 }
 
 .cardTitle {
@@ -213,15 +213,16 @@
 }
 
 .benefitIcon img {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
+  opacity: 0.85;
   transition: all 0.3s ease;
 }
 
 .benefit:hover .benefitIcon img {
-  transform: scale(1.15) rotate(5deg);
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .benefit h3 {
