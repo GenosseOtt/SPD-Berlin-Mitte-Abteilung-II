@@ -86,6 +86,16 @@
   font-size: 14px;
   color: #666;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.event-location img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
 }
 
 .event-description {
@@ -118,6 +128,10 @@
 [data-theme="dark"] .event-time,
 [data-theme="dark"] .event-location {
   color: #b0b0b0;
+}
+
+[data-theme="dark"] .event-location img {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
 }
 
 [data-theme="dark"] .event-description {

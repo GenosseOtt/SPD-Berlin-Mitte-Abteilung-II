@@ -33,7 +33,9 @@ export default function MachMit() {
 
               {/* WhatsApp Card */}
               <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>💬</div>
+                <div className={styles.cardIcon}>
+                  <img src="/img/svg/SPD_Sprechblase_1_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h2 className={styles.cardTitle}>Schreib uns an</h2>
                 <p className={styles.cardDescription}>
                   Hast du Fragen oder möchtest direkt mit uns in Kontakt treten?
@@ -61,7 +63,9 @@ export default function MachMit() {
 
               {/* Events Card */}
               <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>📅</div>
+                <div className={styles.cardIcon}>
+                  <img src="/img/svg/SPD_Hand_5_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h2 className={styles.cardTitle}>Komm vorbei</h2>
                 <p className={styles.cardDescription}>
                   Unsere Veranstaltungen sind offen für alle – eine Parteimitgliedschaft ist nicht erforderlich!
@@ -81,7 +85,9 @@ export default function MachMit() {
 
               {/* Instagram Card */}
               <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>📱</div>
+                <div className={styles.cardIcon}>
+                  <img src="/img/svg/SPD_Handy_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h2 className={styles.cardTitle}>Folg uns</h2>
                 <p className={styles.cardDescription}>
                   Bleib auf dem Laufenden mit aktuellen News, Events und Einblicken aus unserem Kiez.
@@ -113,22 +119,30 @@ export default function MachMit() {
             <h2 className={styles.sectionTitle}>Warum mitmachen?</h2>
             <div className={styles.benefitsGrid}>
               <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>🤝</div>
+                <div className={styles.benefitIcon}>
+                  <img src="/img/svg/SPD_Schwur_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h3>Gemeinsam gestalten</h3>
                 <p>Bring deine Ideen ein und gestalte aktiv die Zukunft unseres Kiezes mit.</p>
               </div>
               <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>🌍</div>
+                <div className={styles.benefitIcon}>
+                  <img src="/img/svg/SPD_Herz_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h3>Etwas bewirken</h3>
                 <p>Mach einen echten Unterschied in deiner Nachbarschaft und darüber hinaus.</p>
               </div>
               <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>👥</div>
+                <div className={styles.benefitIcon}>
+                  <img src="/img/svg/SPD_Divers_2_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h3>Netzwerk aufbauen</h3>
                 <p>Lerne engagierte Menschen kennen und baue wertvolle Kontakte auf.</p>
               </div>
               <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>📚</div>
+                <div className={styles.benefitIcon}>
+                  <img src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg" alt="" />
+                </div>
                 <h3>Dazulernen</h3>
                 <p>Entwickle neue Fähigkeiten und lerne mehr über politische Prozesse.</p>
               </div>

@@ -92,10 +92,13 @@ export default function AbteilungsMap() {
           maxWidth: '500px',
         }}>
           <div style={{
-            fontSize: '48px',
             marginBottom: '20px',
           }}>
-            🗺️
+            <img
+              src="/img/svg/SPD_Karte_schwarz-frei_RGB.svg"
+              alt=""
+              style={{ width: '80px', height: '80px', filter: 'opacity(0.7)' }}
+            />
           </div>
 
           <h3 style={{

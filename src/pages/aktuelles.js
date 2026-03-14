@@ -40,22 +40,51 @@ export default function Aktuelles() {
               <button
                 onClick={handleSubscribe}
                 className="button button--primary button--lg"
+                style={{ display: 'flex', alignItems: 'center', gap: '10px' }}
               >
-                📅 Kalender abonnieren
+                <img
+                  src="/img/svg/SPD_Hand_5_schwarz-frei_RGB.svg"
+                  alt=""
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    filter: 'brightness(0) invert(1)'
+                  }}
+                />
+                <span>Kalender abonnieren</span>
               </button>
             </div>
 
             <div style={{
-              padding: '15px',
-              backgroundColor: '#f0f7ff',
+              padding: '20px',
+              backgroundColor: '#fff5f5',
               borderLeft: '4px solid #e3000f',
-              borderRadius: '4px',
-              marginBottom: '30px'
+              borderRadius: '8px',
+              marginBottom: '30px',
+              boxShadow: '0 2px 8px rgba(227,0,15,0.1)'
             }}>
-              <p style={{ margin: 0, fontSize: '14px' }}>
-                <strong>💡 Tipp:</strong> Klicke auf "Kalender abonnieren" um die Termine automatisch in deiner
+              <p style={{
+                margin: 0,
+                fontSize: '15px',
+                display: 'flex',
+                gap: '12px',
+                alignItems: 'flex-start',
+                lineHeight: '1.6'
+              }}>
+                <img
+                  src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg"
+                  alt=""
+                  style={{
+                    width: '22px',
+                    height: '22px',
+                    flexShrink: 0,
+                    marginTop: '2px',
+                    filter: 'brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%)'
+                  }}
+                />
+                <span><strong>Tipp:</strong> Klicke auf "Kalender abonnieren" um die Termine automatisch in deiner
                 Kalender-App (iOS/Android/macOS/Windows/Outlook) zu synchronisieren.
-                Du erhältst dann automatisch Updates, wenn sich Termine ändern.
+                Du erhältst dann automatisch Updates, wenn sich Termine ändern.</span>
               </p>
             </div>
 
@@ -63,13 +92,28 @@ export default function Aktuelles() {
             <CalendarEvents />
 
             <div style={{ marginTop: '50px' }}>
-              <h3>📱 Instagram</h3>
-              <p>Oder folg uns auf Instagram für aktuelle Updates</p>
+              <h3 style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                <img
+                  src="/img/SPD_Instagram_rot-frei_RGB.png"
+                  alt=""
+                  style={{ width: '28px', height: '28px' }}
+                />
+                <span>Instagram</span>
+              </h3>
+              <p style={{ marginBottom: '20px', color: '#666' }}>
+                Oder folg uns auf Instagram für aktuelle Updates
+              </p>
               <button
                 onClick={() => window.open('https://www.instagram.com/spdberlin_alex/', '_blank')}
                 className="button button--primary"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
-                Folg uns auf Instagram
+                <img
+                  src="/img/SPD_Instagram_weiss-frei_RGB.png"
+                  alt=""
+                  style={{ width: '20px', height: '20px' }}
+                />
+                <span>Folg uns auf Instagram</span>
               </button>
             </div>
           </div>

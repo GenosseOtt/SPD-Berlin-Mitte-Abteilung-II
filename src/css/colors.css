@@ -1,0 +1,67 @@
+/**
+ * SPD Corporate Design Color Palette
+ * Based on official SPD Corporate Design Manual
+ * Source: https://meine.spd.de/deine-kampagne/corporate-design
+ */
+
+:root {
+  /* Primary Brand Colors */
+  --spd-red: #E3000F;              /* Official SPD Red - Primary brand color */
+  --spd-red-dark: #B3000C;         /* Darker shade for hover states */
+  --spd-red-light: #FF1A2F;        /* Lighter shade for accents */
+
+  /* Secondary Colors */
+  --spd-blue: #008BCB;             /* Secondary blue from CD guidelines */
+
+  /* Neutral Colors */
+  --spd-white: #FFFFFF;            /* Pure white */
+  --spd-black: #000000;            /* Pure black */
+  --spd-gray-100: #F8F9FA;         /* Lightest gray - backgrounds */
+  --spd-gray-200: #F5F5F5;         /* Light gray - alt backgrounds */
+  --spd-gray-300: #E8E8E8;         /* Medium-light gray - borders */
+  --spd-gray-400: #C3C3C3;         /* Medium gray */
+  --spd-gray-500: #888888;         /* Mid gray - secondary text */
+  --spd-gray-600: #666666;         /* Dark gray - body text */
+  --spd-gray-700: #555555;         /* Darker gray */
+  --spd-gray-800: #333333;         /* Nearly black - headings */
+
+  /* Semantic Colors (derived from brand colors) */
+  --spd-background: var(--spd-white);
+  --spd-background-alt: var(--spd-gray-100);
+  --spd-text: var(--spd-gray-800);
+  --spd-text-secondary: var(--spd-gray-600);
+  --spd-border: #E0E0E0;
+
+  /* State Colors */
+  --spd-hover-bg: #FFF5F5;         /* Light red tint for hover states */
+
+  /* Legacy gradient colors - to be reviewed */
+  --spd-gradient-start: var(--spd-red);
+  --spd-gradient-end: var(--spd-red-dark);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --spd-background: #1B1B1D;
+  --spd-background-alt: #2D2D2D;
+  --spd-text: #E0E0E0;
+  --spd-text-secondary: #B0B0B0;
+  --spd-border: #3D3D3D;
+  --spd-gray-100: #2D2D2D;
+  --spd-gray-200: #3D3D3D;
+}
+
+/*
+ * COLOR USAGE GUIDELINES
+ *
+ * DO:
+ * - Use var(--spd-red) for primary actions, CTAs, and brand elements
+ * - Use var(--spd-red-dark) for hover states on red elements
+ * - Use neutrals (grays) for text and backgrounds
+ * - Maintain high contrast for accessibility
+ *
+ * DON'T:
+ * - Don't create new shades of red - use existing variables
+ * - Don't use colors outside this palette
+ * - Don't use #c40000, #c10b25 or other non-standard reds
+ */

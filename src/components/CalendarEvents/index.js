@@ -104,7 +104,10 @@ export default function CalendarEvents() {
                   {event.endDate && ` - ${formatTime(event.endDate)}`}
                 </div>
                 {event.location && (
-                  <div className="event-location">📍 {event.location}</div>
+                  <div className="event-location">
+                    <img src="/img/svg/SPD_Hand_1_schwarz-frei_RGB.svg" alt="" />
+                    {event.location}
+                  </div>
                 )}
                 {event.description && (
                   <div className="event-description">{event.description}</div>
