@@ -32,6 +32,7 @@ function ImpactNumber({ value, label, delay }) {
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
+  const [bannerVisible, setBannerVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -43,6 +44,28 @@ export default function Home() {
     <Layout
       title="SPD Alexanderplatz"
       description="Politik neu denken. Kiez neu gestalten.">
+
+      {/* News Banner */}
+      {bannerVisible && (
+        <div className={styles.newsBanner}>
+          <div className={styles.newsBannerContent}>
+            <span className={styles.newsBannerLabel}>Aktuell</span>
+            <p className={styles.newsBannerText}>
+              Unsere Co-Vorsitzende Nadine Riez kandidiert fürs Abgeordnetenhaus. Wir stehen hinter dir.
+              <a href="https://nadine-riez.de" target="_blank" rel="noopener noreferrer" className={styles.newsBannerLink}>
+                Mehr auf nadine-riez.de →
+              </a>
+            </p>
+            <button
+              onClick={() => setBannerVisible(false)}
+              className={styles.newsBannerClose}
+              aria-label="Banner schließen"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section - Full Screen Impact */}
       <section className={styles.hero}>

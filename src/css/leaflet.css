@@ -647,3 +647,28 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin-left: -12px;
   border-right-color: #fff;
 }
+
+/* Fix: Ensure map doesn't overlap navbar */
+.leaflet-container {
+  position: relative;
+  z-index: 1;
+}
+
+.leaflet-control {
+  position: relative;
+  z-index: 800;
+  pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+  pointer-events: auto;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 800;
+  pointer-events: none;
+}
+
+/* Ensure map containers respect navbar spacing */
+.leaflet-container {
+  max-height: calc(100vh - var(--ifm-navbar-height, 70px));
+}

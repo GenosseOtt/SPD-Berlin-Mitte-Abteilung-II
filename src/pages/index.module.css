@@ -1,6 +1,78 @@
 /* Swiss Design Principles: Clean Typography, Grid Systems, Bold Imagery, Negative Space */
 
 /* ========================================
+   NEWS BANNER
+   ======================================== */
+
+.newsBanner {
+  background: #E3000F;
+  color: #fff;
+  padding: 12px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.newsBannerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.newsBannerClose {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-left: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  line-height: 1;
+}
+
+.newsBannerClose:hover {
+  opacity: 1;
+}
+
+.newsBannerLabel {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.newsBannerText {
+  font-family: "SPD_TheSans Regular", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.newsBannerLink {
+  color: #fff;
+  text-decoration: underline;
+  font-family: "SPD_TheSans Bold", sans-serif;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsBannerLink:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+/* ========================================
    HERO SECTION - Full Screen Impact
    ======================================== */
 
@@ -21,8 +93,32 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 0;
+}
+
+.heroBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/photos/abteilung.jpg');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.heroBackground::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background:
-    linear-gradient(135deg, #E3000F 0%, #000 100%),
+    linear-gradient(135deg, rgba(227, 0, 15, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%),
     repeating-linear-gradient(
       0deg,
       transparent,
@@ -30,7 +126,7 @@
       rgba(227, 0, 15, 0.03) 2px,
       rgba(227, 0, 15, 0.03) 4px
     );
-  z-index: 0;
+  z-index: 1;
 }
 
 .heroContent {
@@ -488,6 +584,30 @@
 }
 
 @media (max-width: 768px) {
+  .newsBanner {
+    padding: 12px 16px;
+  }
+
+  .newsBannerContent {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .newsBannerText {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1;
+  }
+
+  .newsBannerClose {
+    margin-left: 0;
+    padding: 0;
+  }
+
   .hero,
   .impactSection,
   .manifestoSection,
@@ -495,6 +615,11 @@
   .actionSection,
   .finalCta {
     padding: 80px 24px;
+  }
+
+  .heroBackground::before {
+    background-position: center center;
+    background-size: cover;
   }
 
   .heroContent {
@@ -535,9 +660,13 @@
   background: #000;
 }
 
-[data-theme="dark"] .heroBackground {
+[data-theme="dark"] .heroBackground::before {
+  opacity: 0.35;
+}
+
+[data-theme="dark"] .heroBackground::after {
   background:
-    linear-gradient(135deg, #E3000F 0%, #000 100%),
+    linear-gradient(135deg, rgba(227, 0, 15, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%),
     repeating-linear-gradient(
       0deg,
       transparent,
