@@ -113,7 +113,7 @@ export default function Home() {
         <div className={styles.impactGrid}>
           <ImpactNumber value={170} label="Aktive Mitglieder" delay={0} />
           <ImpactNumber value={9} label="Delegierte" delay={200} />
-          <ImpactNumber value={25} label="Anträge" delay={400} />
+          <ImpactNumber value={8} label="Anträge" delay={400} />
         </div>
       </section>
 
