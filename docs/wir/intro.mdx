@@ -4,7 +4,6 @@ sidebar_position: 1
 
 import Profile from '@site/src/components/Profile/profile';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import AbteilungsMap from '@site/src/components/AbteilungsMap';
 
 # Unsere Abteilung
 
@@ -23,8 +22,11 @@ Wir sind Freunde des Ortsvereins [Trier Gartenstadt-Mitte](https://www.spd-trier
 
 Unser Abteilungsgebiet besteht aus den Kiezen Spandauer Vorstadt, Scheunenviertel, Nikolaiviertel und der Gegend zwischen Museumsinsel und Alexanderplatz. Also der Kern des historischen Berlin.
 
-<BrowserOnly>
-  {() => <AbteilungsMap />}
+<BrowserOnly fallback={<div>Karte wird geladen...</div>}>
+  {() => {
+    const AbteilungsMap = require('@site/src/components/AbteilungsMap').default;
+    return <AbteilungsMap />;
+  }}
 </BrowserOnly>
 
 ## Organisation
