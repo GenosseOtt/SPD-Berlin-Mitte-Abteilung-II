@@ -94,9 +94,10 @@ export default function Aktuelles() {
             <div style={{ marginTop: '50px' }}>
               <h3 style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                 <img
-                  src="/img/SPD_Instagram_rot-frei_RGB.png"
+                  src="/img/svg/SPD_Instagram_schwarz-frei_RGB.svg"
                   alt=""
                   style={{ width: '28px', height: '28px' }}
+                  className="theme-icon"
                 />
                 <span>Instagram</span>
               </h3>
@@ -109,9 +110,10 @@ export default function Aktuelles() {
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
                 <img
-                  src="/img/SPD_Instagram_weiss-frei_RGB.png"
+                  src="/img/svg/SPD_Instagram_schwarz-frei_RGB.svg"
                   alt=""
                   style={{ width: '20px', height: '20px' }}
+                  className="theme-icon-invert"
                 />
                 <span>Folg uns auf Instagram</span>
               </button>

@@ -1,0 +1,135 @@
+/* Modern Navigation Bar - Swiss Design */
+/* Override Docusaurus navbar styling with proper CSS variables */
+
+:root {
+  /* Docusaurus navbar variables */
+  --ifm-navbar-height: 70px;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --ifm-navbar-link-color: #000000;
+  --ifm-navbar-link-hover-color: #E3000F;
+  --ifm-font-family-base: "SPD_TheSans Regular", sans-serif;
+}
+
+[data-theme="dark"] {
+  --ifm-navbar-background-color: #1b1b1d;
+  --ifm-navbar-link-color: #ffffff;
+}
+
+/* Navbar styling - keep Docusaurus structure */
+.navbar {
+  border-bottom: 1px solid rgba(227, 0, 15, 0.2);
+  font-family: var(--ifm-font-family-base);
+}
+
+.navbar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--ifm-navbar-padding-horizontal);
+}
+
+/* Logo styling */
+.navbar__brand {
+  margin-right: 1rem;
+}
+
+.navbar__logo {
+  height: 42px;
+}
+
+.navbar__title {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+.navbar__item {
+  font-family: "SPD_TheSans Regular", sans-serif;
+}
+
+.navbar__link {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 8px 12px;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: #E3000F;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar__link:hover::after,
+.navbar__link--active::after {
+  transform: scaleX(1);
+}
+
+/* Dropdown menu styling */
+.dropdown__menu {
+  border: 1px solid rgba(227, 0, 15, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+}
+
+.dropdown__link {
+  font-family: "SPD_TheSans Regular", sans-serif;
+  padding: 12px 16px;
+}
+
+.dropdown__link:hover {
+  background: rgba(227, 0, 15, 0.1);
+  color: #E3000F;
+}
+
+/* Fix dropdown arrow visibility */
+.navbar__link--active::after,
+.dropdown > .navbar__link:after {
+  display: none !important;
+}
+
+.dropdown__toggle {
+  color: var(--ifm-navbar-link-color);
+}
+
+[data-theme="dark"] .dropdown__toggle {
+  color: var(--ifm-navbar-link-color);
+}
+
+/* Mobile sidebar */
+.navbar-sidebar {
+  background: var(--ifm-navbar-background-color);
+}
+
+.navbar-sidebar__brand {
+  border-bottom: 1px solid rgba(227, 0, 15, 0.2);
+}
+
+.navbar-sidebar__item {
+  padding: 12px 0;
+}
+
+/* Hamburger menu */
+.navbar__toggle {
+  color: var(--ifm-navbar-link-color);
+}
+
+/* Mobile responsive */
+@media (max-width: 996px) {
+  .navbar__logo {
+    height: 36px;
+  }
+
+  .navbar__title {
+    font-size: 16px;
+  }
+}

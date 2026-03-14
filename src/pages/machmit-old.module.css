@@ -1,0 +1,422 @@
+/* Main Container */
+.mainMachmit {
+  background: linear-gradient(180deg, #e3000f 0%, #c40000 100%);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.05) 100%);
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.heroTitle {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 72px;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.heroSubtitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+
+.heroDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* CTA Cards Section */
+.ctaSection {
+  padding: 60px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ctaCard {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.ctaCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(227,0,15,0.15);
+  border-color: #e3000f;
+}
+
+.cardIcon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIcon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.ctaCard:hover .cardIcon img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.cardTitle {
+  font-family: "SPD_TheSansVersal Regular", sans-serif;
+  font-size: 28px;
+  color: #e3000f;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.cardDescription {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 24px 0;
+}
+
+.cardButton {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.whatsappButton {
+  height: 56px;
+  transition: transform 0.2s ease;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.05);
+}
+
+.cardButtonPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #e3000f;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+}
+
+.cardButtonPrimary:hover {
+  background: #c40000;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+
+.cardButtonIcon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+.cardLink {
+  display: block;
+  color: #e3000f;
+  font-size: 14px;
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.cardLink:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.cardNote {
+  font-size: 14px;
+  color: #888;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* Why Join Section */
+.whyJoinSection {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.sectionTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 42px;
+  text-align: center;
+  color: #e3000f;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefitIcon {
+  font-size: 56px;
+  margin-bottom: 20px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitIcon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.benefit:hover .benefitIcon img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.benefit h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.benefit p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Final CTA Section */
+.finalCta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e3000f 0%, #c40000 100%);
+  color: white;
+  text-align: center;
+}
+
+.finalCtaTitle {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 48px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.finalCtaText {
+  font-size: 20px;
+  margin: 0 0 40px 0;
+  opacity: 0.95;
+}
+
+.finalCtaButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonLarge {
+  display: inline-block;
+  background: white;
+  color: #e3000f;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.buttonLarge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  color: #e3000f;
+  text-decoration: none;
+}
+
+.buttonLargeSecondary {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  padding: 20px 40px;
+  border: 3px solid white;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.buttonLargeSecondary:hover {
+  background: white;
+  color: #e3000f;
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroSubtitle {
+    font-size: 22px;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+  }
+
+  .heroSection {
+    padding: 60px 20px;
+  }
+
+  .ctaSection,
+  .whyJoinSection,
+  .finalCta {
+    padding: 50px 20px;
+  }
+
+  .ctaGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .finalCtaTitle {
+    font-size: 36px;
+  }
+
+  .finalCtaText {
+    font-size: 18px;
+  }
+
+  .finalCtaButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttonLarge,
+  .buttonLargeSecondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cardButtonPrimary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+  }
+
+  .ctaCard {
+    padding: 30px 20px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .ctaSection {
+  background: #1b1b1d;
+}
+
+[data-theme="dark"] .ctaCard {
+  background: #2d2d2d;
+  border-color: #3d3d3d;
+}
+
+[data-theme="dark"] .ctaCard:hover {
+  border-color: #e3000f;
+}
+
+[data-theme="dark"] .cardTitle {
+  color: #e3000f;
+}
+
+[data-theme="dark"] .cardDescription {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .whyJoinSection {
+  background: #1b1b1d;
+}
+
+[data-theme="dark"] .benefit h3 {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .benefit p {
+  color: #b0b0b0;
+}

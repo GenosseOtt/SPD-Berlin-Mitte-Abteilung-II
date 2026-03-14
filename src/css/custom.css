@@ -7,6 +7,9 @@
 /* Import SPD Corporate Design Colors */
 @import './colors.css';
 
+/* Import Modern Navigation Bar */
+@import './navbar.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #E3000F;
@@ -148,4 +151,65 @@ footer {
   border-radius: 52px;
   object-fit: cover;
   background-color: #e3000f;
+}
+
+/* ========================================
+   THEME SUPPORT FOR ICONS
+   ======================================== */
+
+/* Icons that should be red in light mode, white in dark mode */
+.theme-icon {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(7495%) hue-rotate(355deg) brightness(93%) contrast(117%);
+}
+
+[data-theme="dark"] .theme-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Icons that should be white (for buttons on red background) */
+.theme-icon-invert {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .theme-icon-invert {
+  filter: brightness(0) invert(1);
+}
+
+/* ========================================
+   FOOTER STYLING
+   ======================================== */
+
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+[data-theme="dark"] .footer {
+  background-color: #1b1b1d;
+  border-top: 1px solid #3d3d3d;
+}
+
+.footer__title {
+  color: #000;
+  font-family: "SPD_TheSans Bold", sans-serif;
+}
+
+[data-theme="dark"] .footer__title {
+  color: #fff;
+}
+
+.footer__item {
+  color: #666;
+}
+
+[data-theme="dark"] .footer__item {
+  color: #b0b0b0;
+}
+
+.footer__link-item:hover {
+  color: #E3000F;
+}
+
+[data-theme="dark"] .footer__link-item:hover {
+  color: #E3000F;
 }

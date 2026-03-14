@@ -1,178 +1,157 @@
-import React from 'react';
+import { useState } from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
 import styles from './machmit.module.css';
 
 export default function MachMit() {
-  const {siteConfig} = useDocusaurusContext();
+  const [activeStep, setActiveStep] = useState(null);
+
   return (
     <Layout
       title="Mach mit!"
-      description="Werde Teil der SPD Alexanderplatz und gestalte deinen Kiez mit!">
-      <main className={styles.mainMachmit}>
-        {/* Hero Section */}
-        <div className={styles.heroSection}>
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>Mach mit!</h1>
-            <p className={styles.heroSubtitle}>
-              Auch du kannst Teil einer demokratischen Bewegung für deinen Kiez sein.
-            </p>
-            <p className={styles.heroDescription}>
-              Egal ob du uns bei Veranstaltungen unterstützen möchtest, Ideen für unseren Kiez hast
-              oder einfach mehr über unsere Arbeit erfahren willst – <strong>jede Stimme zählt!</strong>
-            </p>
-          </div>
+      description="Werde Teil einer Bewegung, die deinen Kiez wirklich verändert">
+
+      {/* How We're Different */}
+      <section className={styles.differenceSection}>
+        <div className={styles.differenceContent}>
+          <span className={styles.sectionLabel}>Kontakt</span>
+          <h2 className={styles.differenceTitle}>
+            Schreib uns an<br />oder komm vorbei
+          </h2>
         </div>
 
-        {/* CTA Cards Section */}
-        <div className={styles.ctaSection}>
-          <div className={styles.container}>
-            <div className={styles.ctaGrid}>
-
-              {/* WhatsApp Card */}
-              <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>
-                  <img src="/img/svg/SPD_Sprechblase_1_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h2 className={styles.cardTitle}>Schreib uns an</h2>
-                <p className={styles.cardDescription}>
-                  Hast du Fragen oder möchtest direkt mit uns in Kontakt treten?
-                  Schreib uns einfach per WhatsApp!
-                </p>
-                <a
-                  href="https://wa.me/491772902562"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.cardButton}
-                >
-                  <img
-                    src="/img/WhatsAppButtonWhiteLarge.svg"
-                    alt="Chat auf WhatsApp"
-                    className={styles.whatsappButton}
-                  />
-                </a>
-                <a
-                  href="mailto:Johannes.Rupieper@mac.com"
-                  className={styles.cardLink}
-                >
-                  oder per E-Mail →
-                </a>
-              </div>
-
-              {/* Events Card */}
-              <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>
-                  <img src="/img/svg/SPD_Hand_5_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h2 className={styles.cardTitle}>Komm vorbei</h2>
-                <p className={styles.cardDescription}>
-                  Unsere Veranstaltungen sind offen für alle – eine Parteimitgliedschaft ist nicht erforderlich!
-                </p>
-                <Link to="/aktuelles" className={styles.cardButtonPrimary}>
-                  <img
-                    src="/img/SPD_Hand_5_weiss-frei_RGB.png"
-                    alt="SPD Hand"
-                    className={styles.cardButtonIcon}
-                  />
-                  <span>Termine anzeigen</span>
-                </Link>
-                <p className={styles.cardNote}>
-                  Lerne uns persönlich kennen und bring deine Ideen ein!
-                </p>
-              </div>
-
-              {/* Instagram Card */}
-              <div className={styles.ctaCard}>
-                <div className={styles.cardIcon}>
-                  <img src="/img/svg/SPD_Handy_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h2 className={styles.cardTitle}>Folg uns</h2>
-                <p className={styles.cardDescription}>
-                  Bleib auf dem Laufenden mit aktuellen News, Events und Einblicken aus unserem Kiez.
-                </p>
-                <a
-                  href="https://www.instagram.com/spdberlin_alex/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.cardButtonPrimary}
-                >
-                  <img
-                    src="/img/SPD_Instagram_weiss-frei_RGB.png"
-                    alt="Instagram"
-                    className={styles.cardButtonIcon}
-                  />
-                  <span>@spdberlin_alex</span>
-                </a>
-                <p className={styles.cardNote}>
-                  Teile deine Meinung und vernetze dich!
-                </p>
-              </div>
+        <div className={styles.differenceCards}>
+          <div className={styles.differenceCard}>
+            <div className={styles.cardHeader}>
+              <img src="/img/svg/SPD_Sprechblase_1_schwarz-frei_RGB.svg" alt="" className={styles.cardIcon} />
+              <h3>WhatsApp</h3>
             </div>
-          </div>
-        </div>
-
-        {/* Why Join Section */}
-        <div className={styles.whyJoinSection}>
-          <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>Warum mitmachen?</h2>
-            <div className={styles.benefitsGrid}>
-              <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>
-                  <img src="/img/svg/SPD_Schwur_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h3>Gemeinsam gestalten</h3>
-                <p>Bring deine Ideen ein und gestalte aktiv die Zukunft unseres Kiezes mit.</p>
-              </div>
-              <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>
-                  <img src="/img/svg/SPD_Herz_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h3>Etwas bewirken</h3>
-                <p>Mach einen echten Unterschied in deiner Nachbarschaft und darüber hinaus.</p>
-              </div>
-              <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>
-                  <img src="/img/svg/SPD_Divers_2_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h3>Netzwerk aufbauen</h3>
-                <p>Lerne engagierte Menschen kennen und baue wertvolle Kontakte auf.</p>
-              </div>
-              <div className={styles.benefit}>
-                <div className={styles.benefitIcon}>
-                  <img src="/img/svg/SPD_Gluehbirne_schwarz-frei_RGB.svg" alt="" />
-                </div>
-                <h3>Dazulernen</h3>
-                <p>Entwickle neue Fähigkeiten und lerne mehr über politische Prozesse.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Final CTA */}
-        <div className={styles.finalCta}>
-          <div className={styles.container}>
-            <h2 className={styles.finalCtaTitle}>Bereit loszulegen?</h2>
-            <p className={styles.finalCtaText}>
-              Der erste Schritt ist der wichtigste. Wir freuen uns auf dich!
+            <p>
+              Hast du Fragen oder möchtest direkt mit uns in Kontakt treten?
+              Schreib uns einfach per WhatsApp!
             </p>
-            <div className={styles.finalCtaButtons}>
-              <a
-                href="https://wa.me/491772902562"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.buttonLarge}
-              >
-                Jetzt Kontakt aufnehmen
+            <div className={styles.cardAction}>
+              <a href="https://wa.me/491772902562" className={styles.cardLink}>
+                WhatsApp öffnen →
               </a>
-              <Link to="/aktuelles" className={styles.buttonLargeSecondary}>
-                Termine ansehen
-              </Link>
+            </div>
+          </div>
+
+          <div className={styles.differenceCard}>
+            <div className={styles.cardHeader}>
+              <img src="/img/svg/SPD_E-Mail_schwarz-frei_RGB.svg" alt="" className={styles.cardIcon} />
+              <h3>E-Mail</h3>
+            </div>
+            <p>
+              Du erreichst uns auch per E-Mail. Wir antworten so schnell wie möglich
+              auf deine Fragen und Anregungen.
+            </p>
+            <div className={styles.cardAction}>
+              <a href="mailto:Johannes.Rupieper@mac.com" className={styles.cardLink}>
+                E-Mail senden →
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.differenceCard}>
+            <div className={styles.cardHeader}>
+              <img src="/img/svg/SPD_Handy_schwarz-frei_RGB.svg" alt="" className={styles.cardIcon} />
+              <h3>Instagram</h3>
+            </div>
+            <p>
+              Folg uns auf Instagram für aktuelle Updates, Events und Einblicke
+              aus unserem Kiez.
+            </p>
+            <div className={styles.cardAction}>
+              <a href="https://www.instagram.com/spdberlin_alex/" target="_blank" rel="noopener noreferrer" className={styles.cardLink}>
+                @spdberlin_alex →
+              </a>
             </div>
           </div>
         </div>
-      </main>
+      </section>
+
+      {/* Interactive Steps */}
+      <section className={styles.stepsSection}>
+        <div className={styles.stepsHeader}>
+          <span className={styles.sectionLabel}>Dein Weg zu uns</span>
+          <h2 className={styles.stepsTitle}>
+            In 3 Schritten<br />dabei sein
+          </h2>
+        </div>
+
+        <div className={styles.stepsGrid}>
+          {[
+            {
+              number: '01',
+              title: 'Komm vorbei',
+              description: 'Jeden 4. Donnerstag treffen wir uns in einer unserer Stammkneipen.',
+              action: 'Nächster Termin',
+              link: '/aktuelles',
+            },
+            {
+              number: '02',
+              title: 'Bring deine Idee',
+              description: 'Was nervt dich im Kiez? Was könnte besser sein? Erzähl uns davon.',
+              action: 'Schreib uns',
+              link: 'https://wa.me/491772902562',
+            },
+            {
+              number: '03',
+              title: 'Mach es real',
+              description: 'Wir helfen dir, deine Idee umzusetzen – mit unserem Netzwerk und Know-how.',
+              action: 'Los geht\'s',
+              link: '/docs/wir/intro',
+            },
+          ].map((step, index) => (
+            <div
+              key={index}
+              className={`${styles.stepCard} ${activeStep === index ? styles.stepCardActive : ''}`}
+              onMouseEnter={() => setActiveStep(index)}
+              onMouseLeave={() => setActiveStep(null)}
+            >
+              <span className={styles.stepNumber}>{step.number}</span>
+              <h3 className={styles.stepTitle}>{step.title}</h3>
+              <p className={styles.stepDescription}>{step.description}</p>
+              <a href={step.link} className={styles.stepAction}>
+                {step.action} →
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Final Push */}
+      <section className={styles.finalSection}>
+        <div className={styles.finalContent}>
+          <h2 className={styles.finalTitle}>
+            Worauf wartest<br />du noch?
+          </h2>
+
+          <div className={styles.finalActions}>
+            <a
+              href="https://wa.me/491772902562"
+              className={styles.finalButtonPrimary}
+            >
+              <span>Jetzt Kontakt aufnehmen</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="square"/>
+              </svg>
+            </a>
+
+            <Link to="/aktuelles" className={styles.finalButtonSecondary}>
+              Oder komm zum nächsten Treffen
+            </Link>
+          </div>
+
+          <div className={styles.finalNote}>
+            <p>
+              Du musst nichts unterschreiben. Keine Verpflichtungen. Keine versteckten Agenden.<br />
+              Nur Menschen, die ihren Kiez besser machen wollen.
+            </p>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

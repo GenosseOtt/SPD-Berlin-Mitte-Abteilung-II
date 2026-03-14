@@ -1,23 +1,594 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* Swiss Design Principles: Clean Typography, Grid Systems, Bold Imagery, Negative Space */
 
-.heroBanner {
-  padding: 6rem 0;
-  text-align: center;
+/* ========================================
+   HERO SECTION - Full Screen Impact
+   ======================================== */
+
+.hero {
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(135deg, #E3000F 0%, #000 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(227, 0, 15, 0.03) 2px,
+      rgba(227, 0, 15, 0.03) 4px
+    );
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.heroText {
+  max-width: 800px;
+}
+
+.heroLabel {
+  display: inline-block;
+  font-family: "SPD_TheSans Regular", sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heroTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(60px, 12vw, 140px);
+  line-height: 0.9;
+  margin: 0 0 40px 0;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.heroTitleAccent {
+  color: #E3000F;
+  display: inline;
+}
+
+.heroSubtitle {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.6;
+  opacity: 0.85;
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.heroActions {
+  display: flex;
+  gap: 24px;
+  margin-top: 60px;
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: #E3000F;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #E3000F;
+}
+
+.ctaPrimary:hover {
+  background: transparent;
+  color: #E3000F;
+  transform: translateX(10px);
+  text-decoration: none;
+}
+
+.ctaPrimary svg {
+  transition: transform 0.3s ease;
+}
+
+.ctaPrimary:hover svg {
+  transform: translateX(10px);
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ctaSecondary:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.5;
+  animation: fadeIn 1s ease-out 1s backwards;
+}
+
+.scrollLine {
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #fff);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(10px); }
+}
+
+.scrollIndicator span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   IMPACT NUMBERS
+   ======================================== */
+
+.impactSection {
+  background: #fff;
+  padding: 120px 60px;
+}
+
+.impactGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 60px;
+}
+
+.impactNumber {
+  text-align: center;
+}
+
+.numberValue {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 80px;
+  color: #E3000F;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.numberLabel {
+  font-family: "SPD_TheSans Regular", sans-serif;
+  font-size: 16px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   MANIFESTO SECTION - Swiss Grid
+   ======================================== */
+
+.manifestoSection {
+  background: #000;
+  color: #fff;
+  padding: 160px 60px;
+}
+
+.manifestoGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+  align-items: start;
+}
+
+.sectionNumber {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 20px;
+  color: #E3000F;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.manifestoTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: 0.95;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.manifestoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.manifestoItem h3 {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  color: #E3000F;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.manifestoItem p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* ========================================
+   STATEMENT SECTION
+   ======================================== */
+
+.statementSection {
+  background: #E3000F;
+  padding: 160px 60px;
+  text-align: center;
+}
+
+.statementContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.statement {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.3;
+  color: #fff;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.statementAuthor {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* ========================================
+   ACTION SECTION
+   ======================================== */
+
+.actionSection {
+  background: #fff;
+  padding: 160px 60px;
+}
+
+.actionHeader {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+}
+
+.actionTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 6vw, 72px);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.actionGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+}
+
+.actionCard {
+  padding: 60px 40px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.actionCard:hover {
+  border-color: #E3000F;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(227, 0, 15, 0.1);
+}
+
+.actionIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+}
+
+.actionIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.actionCard h3 {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.actionCard p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* ========================================
+   FINAL CTA
+   ======================================== */
+
+.finalCta {
+  background: #000;
+  color: #fff;
+  padding: 160px 60px;
+}
+
+.finalCtaContent {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.finalCtaTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 1;
+  margin: 0 0 100px 0;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.finalCtaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+}
+
+.ctaOption {
+  position: relative;
+  padding-left: 60px;
+}
+
+.ctaOptionNumber {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 24px;
+  color: #E3000F;
+  letter-spacing: 2px;
+}
+
+.ctaOption h3 {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 28px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ctaOption p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 24px 0;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 16px;
+  color: #E3000F;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.ctaLink:hover {
+  color: #fff;
+  transform: translateX(10px);
+  text-decoration: none;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .manifestoGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .finalCtaGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .impactSection,
+  .manifestoSection,
+  .statementSection,
+  .actionSection,
+  .finalCta {
+    padding: 80px 24px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .impactGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .actionGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .actionCard {
+    padding: 40px 24px;
+  }
+}
+
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+
+[data-theme="dark"] .hero {
+  background: #000;
+}
+
+[data-theme="dark"] .heroBackground {
+  background:
+    linear-gradient(135deg, #E3000F 0%, #000 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(227, 0, 15, 0.05) 2px,
+      rgba(227, 0, 15, 0.05) 4px
+    );
+}
+
+[data-theme="dark"] .impactSection {
+  background: #1b1b1d;
+}
+
+[data-theme="dark"] .numberLabel {
+  color: #999;
+}
+
+[data-theme="dark"] .manifestoSection {
+  background: #000;
+}
+
+[data-theme="dark"] .actionSection {
+  background: #1b1b1d;
+}
+
+[data-theme="dark"] .actionCard {
+  background: #2d2d2d;
+  border-color: #3d3d3d;
+}
+
+[data-theme="dark"] .actionCard:hover {
+  border-color: #E3000F;
+  background: #2d2d2d;
+}
+
+[data-theme="dark"] .actionCard h3 {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .actionCard p {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .finalCta {
+  background: #000;
+}
+
+[data-theme="dark"] .ctaOption h3 {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .ctaOption p {
+  color: rgba(255, 255, 255, 0.7);
 }

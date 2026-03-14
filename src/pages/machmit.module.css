@@ -1,422 +1,601 @@
-/* Main Container */
-.mainMachmit {
-  background: linear-gradient(180deg, #e3000f 0%, #c40000 100%);
-  min-height: 100vh;
-}
+/* MACH MIT - Swiss Design with Bold Statement */
 
-/* Hero Section */
-.heroSection {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.05) 100%);
+/* ========================================
+   HERO - Split Screen
+   ======================================== */
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  background: #000;
+  color: #fff;
 }
 
 .heroContent {
-  max-width: 800px;
-  margin: 0 auto;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.heroEyebrow {
+  font-family: "SPD_TheSans Regular", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 40px;
+  display: block;
 }
 
 .heroTitle {
-  font-family: "SPD_TheSans Bold", sans-serif;
-  font-size: 72px;
-  margin: 0 0 24px 0;
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1.05;
+  margin: 0;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: -2px;
 }
 
-.heroSubtitle {
-  font-size: 28px;
-  font-weight: 600;
-  margin: 0 0 20px 0;
-  line-height: 1.4;
+.heroAccent {
+  color: #E3000F;
+  display: block;
+  margin-top: 20px;
 }
 
-.heroDescription {
-  font-size: 18px;
-  line-height: 1.6;
-  opacity: 0.95;
-  max-width: 650px;
-  margin: 0 auto;
+.heroVisual {
+  position: relative;
+  background: #E3000F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* CTA Cards Section */
-.ctaSection {
-  padding: 60px 20px;
-  background: white;
+.heroBox {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transform: rotate(45deg);
+  animation: float 6s ease-in-out infinite;
 }
 
-.container {
+@keyframes float {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(-30px); }
+}
+
+/* ========================================
+   PROBLEM SECTION
+   ======================================== */
+
+.problemSection {
+  background: #fff;
+  padding: 160px 80px;
+}
+
+.problemContent {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.ctaGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.ctaCard {
-  background: white;
-  border: 2px solid #f0f0f0;
-  border-radius: 16px;
-  padding: 40px 30px;
-  text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.ctaCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(227,0,15,0.15);
-  border-color: #e3000f;
-}
-
-.cardIcon {
-  font-size: 64px;
-  margin-bottom: 20px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cardIcon img {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-  opacity: 0.85;
-  transition: all 0.3s ease;
-}
-
-.ctaCard:hover .cardIcon img {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.cardTitle {
-  font-family: "SPD_TheSansVersal Regular", sans-serif;
-  font-size: 28px;
-  color: #e3000f;
-  margin: 0 0 16px 0;
+.sectionLabel {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-.cardDescription {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-  margin: 0 0 24px 0;
-}
-
-.cardButton {
-  display: inline-block;
-  margin: 10px 0;
-}
-
-.whatsappButton {
-  height: 56px;
-  transition: transform 0.2s ease;
-}
-
-.whatsappButton:hover {
-  transform: scale(1.05);
-}
-
-.cardButtonPrimary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #e3000f;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin: 10px 0;
-}
-
-.cardButtonPrimary:hover {
-  background: #c40000;
-  transform: scale(1.05);
-  color: white;
-  text-decoration: none;
-}
-
-.cardButtonIcon {
-  height: 32px;
-  width: 32px;
-  object-fit: contain;
-}
-
-.cardLink {
+  color: #E3000F;
   display: block;
-  color: #e3000f;
-  font-size: 14px;
-  margin-top: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: opacity 0.2s ease;
+  margin-bottom: 24px;
 }
 
-.cardLink:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-}
-
-.cardNote {
-  font-size: 14px;
-  color: #888;
-  margin-top: 16px;
-  font-style: italic;
-}
-
-/* Why Join Section */
-.whyJoinSection {
-  padding: 80px 20px;
-  background: #f8f9fa;
-}
-
-.sectionTitle {
+.problemTitle {
   font-family: "SPD_TheSansVersal Bold", sans-serif;
-  font-size: 42px;
-  text-align: center;
-  color: #e3000f;
-  margin: 0 0 50px 0;
+  font-size: clamp(48px, 7vw, 72px);
+  line-height: 1.1;
+  margin: 0 0 80px 0;
   text-transform: uppercase;
+  letter-spacing: -2px;
+  max-width: 800px;
 }
 
-.benefitsGrid {
+.problemGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  margin-bottom: 100px;
 }
 
-.benefit {
-  text-align: center;
+.problemItem {
+  position: relative;
+  padding-left: 60px;
 }
 
-.benefitIcon {
-  font-size: 56px;
-  margin-bottom: 20px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.problemNumber {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 20px;
+  color: #E3000F;
+  letter-spacing: 2px;
 }
 
-.benefitIcon img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  opacity: 0.85;
-  transition: all 0.3s ease;
-}
-
-.benefit:hover .benefitIcon img {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.benefit h3 {
-  font-size: 22px;
-  color: #333;
-  margin: 0 0 12px 0;
-  font-weight: 600;
-}
-
-.benefit p {
-  font-size: 16px;
+.problemItem p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 20px;
   line-height: 1.6;
   color: #666;
   margin: 0;
 }
 
-/* Final CTA Section */
-.finalCta {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #e3000f 0%, #c40000 100%);
-  color: white;
+.problemStatement {
+  text-align: center;
+  padding: 80px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.problemStatement h3 {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* ========================================
+   DIFFERENCE SECTION
+   ======================================== */
+
+.differenceSection {
+  background: #f8f9fa;
+  padding: 160px 80px;
+}
+
+.differenceContent {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.differenceTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 7vw, 72px);
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.differenceCards {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.differenceCard {
+  background: #fff;
+  padding: 60px 40px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.differenceCard:hover {
+  border-color: #E3000F;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.cardHeader h3 {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.differenceCard p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0 0 32px 0;
+  flex-grow: 1;
+}
+
+.cardAction {
+  margin-top: auto;
+}
+
+.cardLink {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 16px;
+  color: #E3000F;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cardLink:hover {
+  color: #000;
+  transform: translateX(10px);
+  text-decoration: none;
+}
+
+/* ========================================
+   STEPS SECTION
+   ======================================== */
+
+.stepsSection {
+  background: #000;
+  color: #fff;
+  padding: 160px 80px;
+}
+
+.stepsHeader {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.stepsTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 7vw, 72px);
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.stepsGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.stepCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.stepCard:hover,
+.stepCardActive {
+  background: rgba(227, 0, 15, 0.1);
+  border-color: #E3000F;
+  transform: translateY(-12px);
+}
+
+.stepNumber {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: 32px;
+  color: #E3000F;
+  display: block;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.stepTitle {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stepDescription {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 32px 0;
+}
+
+.stepAction {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 16px;
+  color: #E3000F;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.stepAction:hover {
+  color: #fff;
+  transform: translateX(10px);
+  text-decoration: none;
+}
+
+/* ========================================
+   PEOPLE SECTION
+   ======================================== */
+
+.peopleSection {
+  background: #E3000F;
+  color: #fff;
+  padding: 160px 80px;
+}
+
+.peopleContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.peopleTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(48px, 7vw, 72px);
+  line-height: 1.1;
+  margin: 0 0 80px 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.peopleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.personCard {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.personCard:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-8px);
+}
+
+.personQuote {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.personInfo {
+  font-family: "SPD_TheSans Regular", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ========================================
+   FINAL SECTION
+   ======================================== */
+
+.finalSection {
+  background: #fff;
+  padding: 200px 80px;
   text-align: center;
 }
 
-.finalCtaTitle {
-  font-family: "SPD_TheSans Bold", sans-serif;
-  font-size: 48px;
-  margin: 0 0 20px 0;
+.finalContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.finalTitle {
+  font-family: "SPD_TheSansVersal Bold", sans-serif;
+  font-size: clamp(56px, 9vw, 96px);
+  line-height: 1;
+  margin: 0 0 80px 0;
   text-transform: uppercase;
+  letter-spacing: -3px;
 }
 
-.finalCtaText {
-  font-size: 20px;
-  margin: 0 0 40px 0;
-  opacity: 0.95;
-}
-
-.finalCtaButtons {
+.finalActions {
   display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.finalButtonPrimary {
+  display: inline-flex;
+  align-items: center;
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.buttonLarge {
-  display: inline-block;
-  background: white;
-  color: #e3000f;
-  padding: 20px 40px;
-  border-radius: 12px;
+  background: #E3000F;
+  color: #fff;
+  padding: 28px 60px;
+  font-family: "SPD_TheSans Bold", sans-serif;
   font-size: 20px;
-  font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #E3000F;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttonLarge:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  color: #e3000f;
-  text-decoration: none;
-}
-
-.buttonLargeSecondary {
-  display: inline-block;
+.finalButtonPrimary:hover {
   background: transparent;
-  color: white;
-  padding: 20px 40px;
-  border: 3px solid white;
-  border-radius: 12px;
-  font-size: 20px;
-  font-weight: 700;
+  color: #E3000F;
+  transform: scale(1.05);
   text-decoration: none;
+}
+
+.finalButtonSecondary {
+  font-family: "SPD_TheSans Bold", sans-serif;
+  font-size: 16px;
+  color: #666;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
-.buttonLargeSecondary:hover {
-  background: white;
-  color: #e3000f;
-  transform: translateY(-4px);
+.finalButtonSecondary:hover {
+  color: #E3000F;
   text-decoration: none;
 }
 
-/* Mobile Responsiveness */
+.finalNote {
+  padding-top: 60px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.finalNote p {
+  font-family: "SPD_TheSans Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999;
+  margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .heroContent {
+    padding: 100px 40px;
+  }
+
+  .heroVisual {
+    min-height: 400px;
+  }
+
+  .problemSection,
+  .differenceSection,
+  .stepsSection,
+  .peopleSection,
+  .finalSection {
+    padding: 100px 40px;
+  }
+
+  .stepsGrid,
+  .differenceCards,
+  .peopleGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
-  .heroTitle {
-    font-size: 48px;
+  .heroContent {
+    padding: 80px 24px;
   }
 
-  .heroSubtitle {
-    font-size: 22px;
+  .heroVisual {
+    min-height: 300px;
   }
 
-  .heroDescription {
-    font-size: 16px;
+  .problemSection,
+  .differenceSection,
+  .stepsSection,
+  .peopleSection,
+  .finalSection {
+    padding: 80px 24px;
   }
 
-  .heroSection {
-    padding: 60px 20px;
-  }
-
-  .ctaSection,
-  .whyJoinSection,
-  .finalCta {
-    padding: 50px 20px;
-  }
-
-  .ctaGrid {
+  .problemGrid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
-  .benefitsGrid {
+  .problemItem {
+    padding-left: 50px;
+  }
+
+  .differenceCards {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 
-  .sectionTitle {
-    font-size: 32px;
-  }
-
-  .finalCtaTitle {
-    font-size: 36px;
-  }
-
-  .finalCtaText {
-    font-size: 18px;
-  }
-
-  .finalCtaButtons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .buttonLarge,
-  .buttonLargeSecondary {
+  .finalActions {
     width: 100%;
-    text-align: center;
   }
 
-  .cardButtonPrimary {
+  .finalButtonPrimary {
     width: 100%;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .heroTitle {
-    font-size: 36px;
-  }
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
 
-  .heroSubtitle {
-    font-size: 18px;
-  }
-
-  .ctaCard {
-    padding: 30px 20px;
-  }
-
-  .cardTitle {
-    font-size: 24px;
-  }
+[data-theme="dark"] .hero {
+  background: #000;
 }
 
-/* Dark Mode Support */
-[data-theme="dark"] .ctaSection {
+[data-theme="dark"] .heroVisual {
+  background: #E3000F;
+}
+
+[data-theme="dark"] .differenceSection {
   background: #1b1b1d;
 }
 
-[data-theme="dark"] .ctaCard {
+[data-theme="dark"] .differenceCard {
   background: #2d2d2d;
   border-color: #3d3d3d;
 }
 
-[data-theme="dark"] .ctaCard:hover {
-  border-color: #e3000f;
+[data-theme="dark"] .differenceCard:hover {
+  border-color: #E3000F;
+  background: #2d2d2d;
 }
 
-[data-theme="dark"] .cardTitle {
-  color: #e3000f;
-}
-
-[data-theme="dark"] .cardDescription {
-  color: #b0b0b0;
-}
-
-[data-theme="dark"] .whyJoinSection {
-  background: #1b1b1d;
-}
-
-[data-theme="dark"] .benefit h3 {
+[data-theme="dark"] .cardHeader h3 {
   color: #e0e0e0;
 }
 
-[data-theme="dark"] .benefit p {
+[data-theme="dark"] .differenceCard p {
   color: #b0b0b0;
+}
+
+[data-theme="dark"] .stepsSection {
+  background: #000;
+}
+
+[data-theme="dark"] .finalSection {
+  background: #1b1b1d;
+}
+
+[data-theme="dark"] .finalTitle {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .finalNote p {
+  color: #999;
 }
