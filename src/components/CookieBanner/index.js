@@ -12,19 +12,36 @@ export default function CookieBanner() {
       setShowBanner(true);
     } else if (consent === 'accept') {
       // Load analytics if user previously accepted
-      loadAnalytics();
+      loadExternalServices();
     }
   }, []);
 
-  const loadAnalytics = () => {
-    // TODO: Add analytics script loading here when ready
-    console.log('Analytics consent given - ready to load tracking');
+  const loadExternalServices = () => {
+    // Load Plausible Analytics
+    if (!document.getElementById('plausible-script')) {
+      const script = document.createElement('script');
+      script.id = 'plausible-script';
+      script.async = true;
+      script.src = 'https://analytics.johannesott.eu/js/pa-RGI1ZP3wPFgSnJOUwQjUt.js';
+      document.head.appendChild(script);
+
+      // Initialize Plausible
+      const initScript = document.createElement('script');
+      initScript.innerHTML = `
+        window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+        plausible.init()
+      `;
+      document.head.appendChild(initScript);
+    }
+
+    // Dispatch custom event for other components to load external content
+    window.dispatchEvent(new CustomEvent('consent-granted'));
   };
 
   const handleAccept = () => {
     localStorage.setItem('analytics_consent', 'accept');
     setShowBanner(false);
-    loadAnalytics();
+    loadExternalServices();
   };
 
   const handleReject = () => {
@@ -39,8 +56,8 @@ export default function CookieBanner() {
   return (
     <div id="cookies-eu-banner" className="cookies-banner">
       <p>
-        Diese Website nutzt datenschutzfreundliche Analyse-Tools.
-        Mit Ihrer Zustimmung helfen Sie, die Seite zu verbessern.
+        Diese Website nutzt datenschutzfreundliche Dienste (Plausible Analytics, OpenStreetMap)
+        zur Verbesserung der Nutzererfahrung. Mit Ihrer Zustimmung helfen Sie, die Seite zu verbessern.
       </p>
       <div className="cookies-actions">
         <button
