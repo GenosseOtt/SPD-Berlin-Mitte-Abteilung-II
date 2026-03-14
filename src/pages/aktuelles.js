@@ -4,10 +4,26 @@ import CalendarEvents from '../components/CalendarEvents';
 
 export default function Aktuelles() {
   const handleSubscribe = () => {
-    // Use webcal:// protocol to trigger native calendar subscription
     const icsUrl = 'https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/ca3f2350-3f02-47f9-90b0-0b5c8b0b9acb/cid-15939253758E7200/calendar.ics';
-    const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
-    window.location.href = webcalUrl;
+
+    // Detect platform
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isAndroid = /android/i.test(userAgent);
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+
+    if (isIOS || navigator.platform === 'MacIntel') {
+      // iOS and macOS: Use webcal:// protocol
+      const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
+      window.location.href = webcalUrl;
+    } else if (isAndroid) {
+      // Android: Use Google Calendar subscription
+      const googleCalUrl = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl)}`;
+      window.open(googleCalUrl, '_blank');
+    } else {
+      // Desktop browsers: Try webcal first, fallback to direct download
+      const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
+      window.location.href = webcalUrl;
+    }
   };
 
 
