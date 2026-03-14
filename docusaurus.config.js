@@ -120,7 +120,7 @@ const config = {
             type: 'doc',
             docId: 'wir/intro',
             position: 'right',
-            label: 'Wir',
+            label: 'Lern uns kennen',
           },
           {to: 'aktuelles', label: 'Kalender', position: 'right'}, // or position: 'right'
           {to: '/machmit', label: 'Mach mit!', position: 'right'},
