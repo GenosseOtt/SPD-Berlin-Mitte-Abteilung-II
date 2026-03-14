@@ -23,6 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Fetch calendar data
+        run: node scripts/fetch-calendar.js
+        continue-on-error: true
+
       - name: Build website
         run: yarn build
 

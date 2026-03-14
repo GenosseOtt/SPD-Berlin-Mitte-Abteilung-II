@@ -122,7 +122,7 @@ const config = {
             position: 'right',
             label: 'Wir',
           },
-          {to: 'blog', label: 'Blog', position: 'right'}, // or position: 'right'
+          {to: 'aktuelles', label: 'Kalender', position: 'right'}, // or position: 'right'
           {to: '/machmit', label: 'Mach mit!', position: 'right'},
           {
             type: 'dropdown',
@@ -149,11 +149,10 @@ const config = {
         style: 'light',
         links: [],
         copyright: `
-          <a href="https://www.instagram.com/spdberlin_alex/"><img src="/img/SPD_Instagram_rot-frei_RGB.png"></img></a>   
-          <b>SPD Abteilung Mitte II Alexanderplatz</b><span>  </span>      
-          <a href="/docs/impressum">Impressum</a> - 
-          <a href="/docs/datenschutz">Datenschutz</a> <br></br>
-          <span>Diese Seite verwendet ausschließlich technisch notwendige <a href="/docs/cookies">Cookies</a>. </span> 
+          <a href="https://www.instagram.com/spdberlin_alex/"><img src="/img/SPD_Instagram_rot-frei_RGB.png"></img></a>
+          <b>SPD Abteilung Mitte II Alexanderplatz</b><span>  </span>
+          <a href="/docs/impressum">Impressum</a> -
+          <a href="/docs/datenschutz">Datenschutz</a>
           `,
       },
       prism: {
@@ -161,7 +160,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    scripts: [{src: 'http://127.0.0.1:8000/js/script.local.js', defer: true, 'data-domain': 'localhost'}],
 };
 
 module.exports = config;
