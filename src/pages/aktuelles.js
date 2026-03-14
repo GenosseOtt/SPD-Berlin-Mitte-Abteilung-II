@@ -4,16 +4,12 @@ import CalendarEvents from '../components/CalendarEvents';
 
 export default function Aktuelles() {
   const handleSubscribe = () => {
-    // Open the ICS file which will trigger the OS calendar subscription
-    window.location.href = 'https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/ca3f2350-3f02-47f9-90b0-0b5c8b0b9acb/cid-15939253758E7200/calendar.ics';
+    // Use webcal:// protocol to trigger native calendar subscription
+    const icsUrl = 'https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/ca3f2350-3f02-47f9-90b0-0b5c8b0b9acb/cid-15939253758E7200/calendar.ics';
+    const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
+    window.location.href = webcalUrl;
   };
 
-  const handleViewOnline = () => {
-    window.open(
-      'https://outlook.live.com/owa/calendar/d8ab5042-b63c-4cbb-939f-620c77db7317/ca3f2350-3f02-47f9-90b0-0b5c8b0b9acb/cid-15939253758E7200/index.html',
-      '_blank'
-    );
-  };
 
   return (
     <Layout
