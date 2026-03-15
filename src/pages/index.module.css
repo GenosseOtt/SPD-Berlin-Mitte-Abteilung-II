@@ -613,6 +613,10 @@
     padding: 0;
   }
 
+  .scrollIndicator {
+    display: none;
+  }
+
   .hero,
   .impactSection,
   .manifestoSection,

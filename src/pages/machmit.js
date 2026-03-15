@@ -31,7 +31,7 @@ export default function MachMit() {
               Schreib uns einfach per WhatsApp!
             </p>
             <div className={styles.cardAction}>
-              <a href="https://wa.me/491772902562" className={styles.cardLink}>
+              <a href="https://wa.me/4915755666274" className={styles.cardLink}>
                 WhatsApp öffnen →
               </a>
             </div>
