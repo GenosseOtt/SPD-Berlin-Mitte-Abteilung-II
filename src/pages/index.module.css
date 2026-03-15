@@ -12,7 +12,7 @@
   top: var(--ifm-navbar-height, 70px);
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
