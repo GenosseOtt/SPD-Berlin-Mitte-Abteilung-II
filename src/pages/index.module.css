@@ -670,18 +670,18 @@
 }
 
 [data-theme="dark"] .heroBackground::before {
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 [data-theme="dark"] .heroBackground::after {
   background:
-    linear-gradient(135deg, rgba(227, 0, 15, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%),
+    linear-gradient(135deg, rgba(227, 0, 15, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 2px,
-      rgba(227, 0, 15, 0.05) 2px,
-      rgba(227, 0, 15, 0.05) 4px
+      rgba(227, 0, 15, 0.03) 2px,
+      rgba(227, 0, 15, 0.03) 4px
     );
 }
 
