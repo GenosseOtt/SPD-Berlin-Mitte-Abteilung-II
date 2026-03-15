@@ -126,7 +126,7 @@ const config = {
         {name: 'twitter:image', content: 'https://spd-alex.de/img/logo.png'},
       ],
       navbar: {
-        title: 'Berlin-Mitte / Alexanderplatz',
+        title: 'Alexanderplatz / Berlin-Mitte',
         logo: {
           alt: 'SPD Logo',
           src: 'img/SPD-Logo.svg',
