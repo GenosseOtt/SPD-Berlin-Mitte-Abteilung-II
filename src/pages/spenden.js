@@ -50,8 +50,8 @@ ${purposes[selectedPurpose]}`;
           <div className={styles.header}>
             <span className={styles.sectionLabel}>Unterstützung</span>
             <h1 className={styles.title}>
-              Spende für einen<br />
-              lebenswerten Kiez
+              Spende für die<br />
+              Sozialdemokratie
             </h1>
             <p className={styles.subtitle}>
               Deine Spende hilft uns, Politik für alle zu machen – transparent,
