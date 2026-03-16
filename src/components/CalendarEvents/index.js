@@ -63,7 +63,7 @@ export default function CalendarEvents() {
         <p>Keine anstehenden Termine in den nächsten 3 Monaten.</p>
         {lastUpdated && (
           <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-            Letzte Aktualisierung: {formatDate(lastUpdated)} um {formatTime(lastUpdated)}
+            Letzte Aktualisierung: {formatDate(lastUpdated)}
           </p>
         )}
       </div>
@@ -79,7 +79,7 @@ export default function CalendarEvents() {
           marginBottom: '15px',
           fontStyle: 'italic'
         }}>
-          Letzte Aktualisierung: {formatDate(lastUpdated)} um {formatTime(lastUpdated)}
+          Letzte Aktualisierung: {formatDate(lastUpdated)}
         </div>
       )}
       <div className="calendar-events">
@@ -100,8 +100,7 @@ export default function CalendarEvents() {
               <div className="event-details">
                 <h3 className="event-title">{event.title}</h3>
                 <div className="event-time">
-                  {formatDate(event.startDate)} • {formatTime(event.startDate)}
-                  {event.endDate && ` - ${formatTime(event.endDate)}`}
+                  {formatDate(event.startDate)}
                 </div>
                 {event.location && (
                   <div className="event-location">
