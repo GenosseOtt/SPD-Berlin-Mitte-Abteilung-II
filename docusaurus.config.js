@@ -140,6 +140,7 @@ const config = {
           },
           {to: 'aktuelles', label: 'Kalender', position: 'right'}, // or position: 'right'
           {to: '/machmit', label: 'Mach mit!', position: 'right'},
+          {to: '/spenden', label: 'Spenden', position: 'right'},
           {
             type: 'dropdown',
             label: 'Mehr SPD',

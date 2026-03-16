@@ -1,0 +1,359 @@
+.spendenPage {
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  background: #ffffff;
+  padding-top: var(--ifm-navbar-height);
+}
+
+[data-theme="dark"] .spendenPage {
+  background: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E3000F;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+  color: #000000;
+}
+
+[data-theme="dark"] .title {
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+[data-theme="dark"] .subtitle {
+  color: #a0a0a0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.qrSection,
+.bankingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.qrCard,
+.bankingCard,
+.infoBox {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e0e0e0;
+}
+
+[data-theme="dark"] .qrCard,
+[data-theme="dark"] .bankingCard,
+[data-theme="dark"] .infoBox {
+  background: #242424;
+  border-color: #333333;
+}
+
+.qrTitle,
+.bankingTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: #000000;
+}
+
+[data-theme="dark"] .qrTitle,
+[data-theme="dark"] .bankingTitle {
+  color: #ffffff;
+}
+
+.qrCodeWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+[data-theme="dark"] .qrCodeWrapper {
+  background: #ffffff;
+}
+
+.qrCode {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.qrHint {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .qrHint {
+  color: #a0a0a0;
+}
+
+.detailGroup {
+  margin-bottom: 24px;
+}
+
+.detailGroup:last-child {
+  margin-bottom: 0;
+}
+
+.detailGroup label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .detailGroup label {
+  color: #a0a0a0;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+[data-theme="dark"] .valueRow {
+  background: #1a1a1a;
+  border-color: #333333;
+}
+
+.value {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  flex: 1;
+}
+
+[data-theme="dark"] .value {
+  color: #ffffff;
+}
+
+.purposeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.segmentedControl {
+  display: flex;
+  background: #e0e0e0;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 12px;
+  gap: 4px;
+}
+
+[data-theme="dark"] .segmentedControl {
+  background: #333333;
+}
+
+.segmentButton {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+[data-theme="dark"] .segmentButton {
+  color: #a0a0a0;
+}
+
+.segmentButton:hover {
+  color: #000000;
+}
+
+[data-theme="dark"] .segmentButton:hover {
+  color: #ffffff;
+}
+
+.segmentButtonActive {
+  background: #ffffff;
+  color: #E3000F !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .segmentButtonActive {
+  background: #1a1a1a;
+  color: #E3000F !important;
+}
+
+.orDivider {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999999;
+  padding: 4px 0;
+}
+
+.copyButton {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #E3000F;
+  background: transparent;
+  border: 1px solid #E3000F;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.copyButton:hover {
+  background: #E3000F;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .copyButton {
+  color: #E3000F;
+  border-color: #E3000F;
+}
+
+[data-theme="dark"] .copyButton:hover {
+  background: #E3000F;
+  color: #ffffff;
+}
+
+.infoBox {
+  background: #fff8f8;
+  border-left: 4px solid #E3000F;
+}
+
+[data-theme="dark"] .infoBox {
+  background: #2a1a1a;
+  border-left-color: #E3000F;
+}
+
+.infoBox h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #000000;
+}
+
+[data-theme="dark"] .infoBox h3 {
+  color: #ffffff;
+}
+
+.infoBox p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0;
+}
+
+[data-theme="dark"] .infoBox p {
+  color: #a0a0a0;
+}
+
+.mailtoLink {
+  color: #E3000F;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.mailtoLink:hover {
+  border-bottom-color: #E3000F;
+}
+
+[data-theme="dark"] .mailtoLink {
+  color: #E3000F;
+}
+
+[data-theme="dark"] .mailtoLink:hover {
+  border-bottom-color: #E3000F;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .qrCard,
+  .bankingCard,
+  .infoBox {
+    padding: 24px;
+  }
+
+  .valueRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .value {
+    word-break: break-all;
+  }
+
+  .copyButton {
+    width: 100%;
+  }
+}
