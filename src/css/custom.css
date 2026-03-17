@@ -71,11 +71,11 @@
 
 body {
   word-wrap: break-word;
-  -moz-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -moz-hyphens: none;
+  -o-hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 .navbar__logo {

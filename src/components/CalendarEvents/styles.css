@@ -74,12 +74,24 @@
   font-size: 20px;
   font-weight: 600;
   color: #333;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .event-time {
   font-size: 14px;
   color: #666;
   margin-bottom: 8px;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .event-location {
@@ -89,6 +101,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .event-location img {
@@ -96,6 +114,7 @@
   height: 16px;
   object-fit: contain;
   opacity: 0.7;
+  flex-shrink: 0;
 }
 
 .event-description {
@@ -103,6 +122,12 @@
   color: #555;
   margin-top: 10px;
   line-height: 1.6;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 [data-theme="dark"] .calendar-consent-notice,
