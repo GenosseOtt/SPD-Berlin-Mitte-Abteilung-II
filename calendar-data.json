@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "[Vorstand] Telefonschalte",
-      "description": "",
-      "location": "",
-      "startDate": "2026-04-02T16:30:00.000Z",
-      "endDate": "2026-04-02T17:15:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E008000000007A6CD28CA6C1DC01000000000000000010000000A3EB6A4947554F4BB1AA4C333FBF7170"
-    },
-    {
       "title": "Klausur Abteilung 2",
       "description": "",
       "location": "",
@@ -57,6 +49,6 @@
       "uid": "040000008200E00074C5B7101A82E0080000000017A8151E0AA4DC01000000000000000010000000FFED6D0577D58446A4DB6B025FDCDF13"
     }
   ],
-  "lastUpdated": "2026-04-02T13:16:14.152Z",
-  "nextUpdate": "2026-04-03T01:16:14.152Z"
+  "lastUpdated": "2026-04-03T02:27:52.065Z",
+  "nextUpdate": "2026-04-03T14:27:52.065Z"
 }
