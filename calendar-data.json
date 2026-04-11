@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "Klausur Abteilung 2",
-      "description": "",
-      "location": "",
-      "startDate": "2026-04-11T00:00:00.000Z",
-      "endDate": "2026-04-12T00:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E00800000000AB85B6416CA6DC010000000000000000100000008B2ECCBDA3FD80498AA259B3B9815C21"
-    },
-    {
       "title": "[Wahlkampf] Veranstaltung im Kiez",
       "description": "",
       "location": "",
@@ -47,8 +39,16 @@
       "startDate": "2026-06-20T00:00:00.000Z",
       "endDate": "2026-06-21T00:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E0080000000017A8151E0AA4DC01000000000000000010000000FFED6D0577D58446A4DB6B025FDCDF13"
+    },
+    {
+      "title": "[Wahlkampf] Veranstaltung im Kiez",
+      "description": "",
+      "location": "",
+      "startDate": "2026-07-11T00:00:00.000Z",
+      "endDate": "2026-07-12T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000536B80224AADDC01000000000000000010000000C2D2AFFA6B4301478F12B7703E705367"
     }
   ],
-  "lastUpdated": "2026-04-10T13:13:10.977Z",
-  "nextUpdate": "2026-04-11T01:13:10.977Z"
+  "lastUpdated": "2026-04-11T02:23:40.157Z",
+  "nextUpdate": "2026-04-11T14:23:40.157Z"
 }
