@@ -55,8 +55,24 @@
       "startDate": "2026-07-11T00:00:00.000Z",
       "endDate": "2026-07-12T00:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E00800000000536B80224AADDC01000000000000000010000000C2D2AFFA6B4301478F12B7703E705367"
+    },
+    {
+      "title": "Sommerfest SPD Mitte (2 und friends)",
+      "description": "\n",
+      "location": "",
+      "startDate": "2026-07-18T00:00:00.000Z",
+      "endDate": "2026-07-19T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E008000000004689FFFAA984DC01000000000000000010000000181D19694BCA054084198B91504755D8"
+    },
+    {
+      "title": "[Wahlkampf] Veranstaltung im Kiez",
+      "description": "",
+      "location": "",
+      "startDate": "2026-07-18T00:00:00.000Z",
+      "endDate": "2026-07-19T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000F127C01D4AADDC010000000000000000100000008593D7F44F928D4ABC2F4ECB59214EB3"
     }
   ],
-  "lastUpdated": "2026-04-17T13:22:06.693Z",
-  "nextUpdate": "2026-04-18T01:22:06.693Z"
+  "lastUpdated": "2026-04-18T02:29:42.198Z",
+  "nextUpdate": "2026-04-18T14:29:42.198Z"
 }
