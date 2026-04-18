@@ -1,12 +1,20 @@
 {
   "events": [
     {
-      "title": "Berlinweite Wahlkampfaktionen [Miete]",
+      "title": "[Wahkkampf] TBD",
       "description": "",
-      "location": "Infostände Annenstraße und Leipziger Straße",
-      "startDate": "2026-04-18T09:00:00.000Z",
-      "endDate": "2026-04-18T11:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E00800000000867990741FCBDC01000000000000000010000000E02FBD5C96B9F34C8626D5B51B6CEFB7"
+      "location": "",
+      "startDate": "2026-04-21T16:00:00.000Z",
+      "endDate": "2026-04-21T18:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E008000000001EE682B530CFDC0100000000000000001000000025C89112A2F2824089E1974AC074BC9E"
+    },
+    {
+      "title": "Stammtisch ",
+      "description": "",
+      "location": "Restaurant Keyser Soze\nTucholskystraße 33, 10117 Berlin, Germany",
+      "startDate": "2026-04-23T17:00:00.000Z",
+      "endDate": "2026-04-23T19:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000D76C781C0A98DC0100000000000000001000000085DAC6F3D07087449BF07118817215C9"
     },
     {
       "title": "[Wahlkampf] Infostand ",
@@ -57,22 +65,22 @@
       "uid": "040000008200E00074C5B7101A82E00800000000536B80224AADDC01000000000000000010000000C2D2AFFA6B4301478F12B7703E705367"
     },
     {
-      "title": "Sommerfest SPD Mitte (2 und friends)",
-      "description": "\n",
-      "location": "",
-      "startDate": "2026-07-18T00:00:00.000Z",
-      "endDate": "2026-07-19T00:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E008000000004689FFFAA984DC01000000000000000010000000181D19694BCA054084198B91504755D8"
-    },
-    {
       "title": "[Wahlkampf] Veranstaltung im Kiez",
       "description": "",
       "location": "",
       "startDate": "2026-07-18T00:00:00.000Z",
       "endDate": "2026-07-19T00:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E00800000000F127C01D4AADDC010000000000000000100000008593D7F44F928D4ABC2F4ECB59214EB3"
+    },
+    {
+      "title": "Sommerfest SPD Mitte (2 und friends)",
+      "description": "\n",
+      "location": "",
+      "startDate": "2026-07-18T00:00:00.000Z",
+      "endDate": "2026-07-19T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E008000000004689FFFAA984DC01000000000000000010000000181D19694BCA054084198B91504755D8"
     }
   ],
-  "lastUpdated": "2026-04-18T02:29:42.198Z",
-  "nextUpdate": "2026-04-18T14:29:42.198Z"
+  "lastUpdated": "2026-04-18T13:04:20.888Z",
+  "nextUpdate": "2026-04-19T01:04:20.888Z"
 }
