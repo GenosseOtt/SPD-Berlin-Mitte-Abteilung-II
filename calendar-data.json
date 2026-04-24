@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "Stammtisch ",
-      "description": "",
-      "location": "Restaurant Keyser Soze\nTucholskystraße 33, 10117 Berlin, Germany",
-      "startDate": "2026-04-23T17:00:00.000Z",
-      "endDate": "2026-04-23T19:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E00800000000D76C781C0A98DC0100000000000000001000000085DAC6F3D07087449BF07118817215C9"
-    },
-    {
       "title": "[Wahlkampf] Infostand ",
       "description": "",
       "location": "Folgt",
@@ -81,6 +73,6 @@
       "uid": "040000008200E00074C5B7101A82E00800000000490A922E0AA4DC010000000000000000100000008D552587E4F6EF48B2ED50F816C0A570"
     }
   ],
-  "lastUpdated": "2026-04-23T13:45:04.342Z",
-  "nextUpdate": "2026-04-24T01:45:04.342Z"
+  "lastUpdated": "2026-04-24T02:42:19.338Z",
+  "nextUpdate": "2026-04-24T14:42:19.338Z"
 }
