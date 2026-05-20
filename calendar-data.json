@@ -1,22 +1,6 @@
 {
   "events": [
     {
-      "title": "[Tür zu Tür] Wahlkampf",
-      "description": "",
-      "location": "",
-      "startDate": "2026-05-19T15:30:00.000Z",
-      "endDate": "2026-05-19T17:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E00800000000F441E262F9DDDC010000000000000000100000001AF5FB1F9DA7E4498BEBF20A0203299C"
-    },
-    {
-      "title": "Demo: Flußbad",
-      "description": "https://www.flussbad-berlin.de/",
-      "location": "TBD",
-      "startDate": "2026-05-20T00:00:00.000Z",
-      "endDate": "2026-05-21T00:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E0080000000011B819030AA4DC01000000000000000010000000326ADC77BC2F9A47B5703B303737C2C4"
-    },
-    {
       "title": "[Vorstand] Telefonschalte",
       "description": "",
       "location": "",
@@ -191,8 +175,16 @@
       "startDate": "2026-08-18T15:30:00.000Z",
       "endDate": "2026-08-18T17:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E00800000000E2D11B9FF9DDDC010000000000000000100000002FBBBEAB9D504E458D79895151AD5075"
+    },
+    {
+      "title": "Demo: Flußbad ",
+      "description": "https://www.flussbad-berlin.de/",
+      "location": "",
+      "startDate": "2026-08-20T00:00:00.000Z",
+      "endDate": "2026-08-21T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000433754370AA4DC010000000000000000100000004879BF5684933343A914741385E83185"
     }
   ],
-  "lastUpdated": "2026-05-19T15:23:36.244Z",
-  "nextUpdate": "2026-05-20T03:23:36.244Z"
+  "lastUpdated": "2026-05-20T03:37:54.554Z",
+  "nextUpdate": "2026-05-20T15:37:54.554Z"
 }
