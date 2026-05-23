@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "Infostand vor Kaufland",
-      "description": "\n",
-      "location": "Kaufland (Karl-Liebknecht-Straße 13)",
-      "startDate": "2026-05-23T09:00:00.000Z",
-      "endDate": "2026-05-23T10:30:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E0080000000089546412A3E6DC010000000000000000100000002071C6E4D15EE2479156AA5DBB2BE0A2"
-    },
-    {
       "title": "[Tür zu Tür] Wahlkampf",
       "description": "",
       "location": "",
@@ -193,6 +185,6 @@
       "uid": "040000008200E00074C5B7101A82E008000000000273C570DCDADC01000000000000000010000000C501471239EA4B458539C8B37636E9C7"
     }
   ],
-  "lastUpdated": "2026-05-23T03:20:58.609Z",
-  "nextUpdate": "2026-05-23T15:20:58.609Z"
+  "lastUpdated": "2026-05-23T13:26:24.046Z",
+  "nextUpdate": "2026-05-24T01:26:24.046Z"
 }
