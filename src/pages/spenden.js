@@ -83,8 +83,8 @@ ${purposes[selectedPurpose]}`;
                 <div className={styles.detailGroup}>
                   <label>Empfänger</label>
                   <div className={styles.valueRow}>
-                    <span className={styles.value}>SPD Berlin Abteilung Alexanderplatz</span>
-                    <CopyButton text="SPD Berlin Abteilung Alexanderplatz" label="Empfänger" />
+                    <span className={styles.value}>SPD Berlin Mitte Abteilung 2 Alexanderplatz</span>
+                    <CopyButton text="SPD Berlin Mitte Abteilung 2 Alexanderplatz" label="Empfänger" />
                   </div>
                 </div>
 
