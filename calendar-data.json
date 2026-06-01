@@ -9,6 +9,14 @@
       "uid": "040000008200E00074C5B7101A82E008000000000443BB6AF9DDDC010000000000000000100000009ED95980332A1744B85937F4C4E5821C"
     },
     {
+      "title": "Infostand ",
+      "description": "",
+      "location": "",
+      "startDate": "2026-06-06T09:00:00.000Z",
+      "endDate": "2026-06-06T11:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000D62F06CFA3F1DC010000000000000000100000006D1E7CC3977C774498F3C75AD7C7C754"
+    },
+    {
       "title": "[Tür zu Tür] Wahlkampf",
       "description": "",
       "location": "",
@@ -175,8 +183,16 @@
       "startDate": "2026-08-25T15:30:00.000Z",
       "endDate": "2026-08-25T17:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E00800000000C704CBA0F9DDDC01000000000000000010000000E4C8C965E7E4FC4F865B563A9404CDCB"
+    },
+    {
+      "title": "[Tür zu Tür] Wahlkampf",
+      "description": "",
+      "location": "",
+      "startDate": "2026-09-01T15:30:00.000Z",
+      "endDate": "2026-09-01T17:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E0080000000095A7B0A1F9DDDC01000000000000000010000000DDBC9241CB1FE2468401D74BEBD026A1"
     }
   ],
-  "lastUpdated": "2026-06-01T04:08:51.355Z",
-  "nextUpdate": "2026-06-01T16:08:51.355Z"
+  "lastUpdated": "2026-06-01T17:40:08.168Z",
+  "nextUpdate": "2026-06-02T05:40:08.168Z"
 }
