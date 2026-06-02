@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "[Tür zu Tür] Wahlkampf",
-      "description": "",
-      "location": "",
-      "startDate": "2026-06-02T15:30:00.000Z",
-      "endDate": "2026-06-02T17:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E008000000000443BB6AF9DDDC010000000000000000100000009ED95980332A1744B85937F4C4E5821C"
-    },
-    {
       "title": "Infostand ",
       "description": "",
       "location": "",
@@ -193,6 +185,6 @@
       "uid": "040000008200E00074C5B7101A82E0080000000095A7B0A1F9DDDC01000000000000000010000000DDBC9241CB1FE2468401D74BEBD026A1"
     }
   ],
-  "lastUpdated": "2026-06-02T04:02:13.276Z",
-  "nextUpdate": "2026-06-02T16:02:13.276Z"
+  "lastUpdated": "2026-06-02T16:25:50.153Z",
+  "nextUpdate": "2026-06-03T04:25:50.153Z"
 }
