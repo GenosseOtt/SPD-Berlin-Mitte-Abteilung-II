@@ -49,6 +49,14 @@
       "uid": "040000008200E00074C5B7101A82E0080000000068909682F9DDDC0100000000000000001000000099A2727217A62141940CFF1DD46E18BE"
     },
     {
+      "title": "Abteilungssitzung",
+      "description": "",
+      "location": "TBD",
+      "startDate": "2026-07-09T17:00:00.000Z",
+      "endDate": "2026-07-09T19:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E008000000003FEE96F8C796DC01000000000000000010000000D048B9070061CB439B1BD6ED742EFFF0"
+    },
+    {
       "title": "[Wahlkampf] Veranstaltung im Kiez",
       "description": "",
       "location": "",
@@ -199,8 +207,16 @@
       "startDate": "2026-09-12T00:00:00.000Z",
       "endDate": "2026-09-13T00:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E008000000009D1E1E304AADDC0100000000000000001000000067B1ACC790273C448AC202CB3D57803B"
+    },
+    {
+      "title": "[Wahlkampf] Veranstaltung im Kiez",
+      "description": "",
+      "location": "",
+      "startDate": "2026-09-13T00:00:00.000Z",
+      "endDate": "2026-09-14T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000ED1E5F334AADDC0100000000000000001000000026499BD61F05324D8A9CB5FBBB8F9E97"
     }
   ],
-  "lastUpdated": "2026-06-12T13:16:08.494Z",
-  "nextUpdate": "2026-06-13T01:16:08.494Z"
+  "lastUpdated": "2026-06-13T01:00:59.592Z",
+  "nextUpdate": "2026-06-13T13:00:59.593Z"
 }
