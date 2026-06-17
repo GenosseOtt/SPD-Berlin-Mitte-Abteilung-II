@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "[Tür zu Tür] Wahlkampf",
-      "description": "",
-      "location": "",
-      "startDate": "2026-06-16T15:30:00.000Z",
-      "endDate": "2026-06-16T17:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E00800000000325BEC74F9DDDC01000000000000000010000000B76178D3CDB99F48BA8015A02AC39A4E"
-    },
-    {
       "title": "[Wahlkampf] 24h Wahlkampfaktion WM",
       "description": "",
       "location": "",
@@ -217,6 +209,6 @@
       "uid": "040000008200E00074C5B7101A82E00800000000ED1E5F334AADDC0100000000000000001000000026499BD61F05324D8A9CB5FBBB8F9E97"
     }
   ],
-  "lastUpdated": "2026-06-16T13:54:55.374Z",
-  "nextUpdate": "2026-06-17T01:54:55.374Z"
+  "lastUpdated": "2026-06-17T01:02:36.733Z",
+  "nextUpdate": "2026-06-17T13:02:36.733Z"
 }
