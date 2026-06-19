@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "[Wahlkampf] 24h Wahlkampfaktion WM",
-      "description": "",
-      "location": "",
-      "startDate": "2026-06-19T00:00:00.000Z",
-      "endDate": "2026-06-21T00:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E008000000002343C3F249ADDC01000000000000000010000000205A561B588B6A4D9727B73740ED5975"
-    },
-    {
       "title": "Demo: Flußbad",
       "description": "https://www.flussbad-berlin.de/",
       "location": "",
@@ -207,8 +199,16 @@
       "startDate": "2026-09-13T00:00:00.000Z",
       "endDate": "2026-09-14T00:00:00.000Z",
       "uid": "040000008200E00074C5B7101A82E00800000000ED1E5F334AADDC0100000000000000001000000026499BD61F05324D8A9CB5FBBB8F9E97"
+    },
+    {
+      "title": "[Wahlkampf] Veranstaltung im Kiez",
+      "description": "",
+      "location": "",
+      "startDate": "2026-09-19T00:00:00.000Z",
+      "endDate": "2026-09-20T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E008000000000C19F4354AADDC01000000000000000010000000C1F3FFD74F919342A7C5AF3F74162117"
     }
   ],
-  "lastUpdated": "2026-06-18T13:16:30.959Z",
-  "nextUpdate": "2026-06-19T01:16:30.959Z"
+  "lastUpdated": "2026-06-19T01:06:51.048Z",
+  "nextUpdate": "2026-06-19T13:06:51.048Z"
 }
