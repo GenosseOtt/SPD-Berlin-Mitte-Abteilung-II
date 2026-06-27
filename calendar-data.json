@@ -1,14 +1,6 @@
 {
   "events": [
     {
-      "title": "Landesweite Wahlkampfaktion",
-      "description": "",
-      "location": "",
-      "startDate": "2026-06-27T00:00:00.000Z",
-      "endDate": "2026-06-28T00:00:00.000Z",
-      "uid": "040000008200E00074C5B7101A82E0080000000097C8BF94C1FFDC01000000000000000010000000350B2DD0B504C14EB3E4A482550679D4"
-    },
-    {
       "title": "[Tür zu Tür] Wahlkampf",
       "description": "",
       "location": "",
@@ -209,6 +201,6 @@
       "uid": "040000008200E00074C5B7101A82E008000000000C0402450AA4DC01000000000000000010000000348D799359516C4E8085910A2D1BA15D"
     }
   ],
-  "lastUpdated": "2026-06-26T12:49:40.405Z",
-  "nextUpdate": "2026-06-27T00:49:40.405Z"
+  "lastUpdated": "2026-06-27T00:53:50.552Z",
+  "nextUpdate": "2026-06-27T12:53:50.552Z"
 }
