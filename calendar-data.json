@@ -1,5 +1,30 @@
 {
-  "events": [],
-  "lastUpdated": "2026-10-03T04:05:28.786Z",
-  "nextUpdate": "2026-10-03T16:05:28.786Z"
+  "events": [
+    {
+      "title": "Kreis: „Zukunft der Parteiarbeit“",
+      "description": "",
+      "location": "",
+      "startDate": "2026-10-14T00:00:00.000Z",
+      "endDate": "2026-10-15T00:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000BD3FC3304C53DD01000000000000000010000000865077C0CD6310458FF8F59AEFDAB01F"
+    },
+    {
+      "title": "Kreis: Wahlkampfauswertung",
+      "description": "",
+      "location": "",
+      "startDate": "2026-10-24T12:00:00.000Z",
+      "endDate": "2026-10-24T15:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000035F5B424C53DD01000000000000000010000000FE12F1F8B21BDF45A4025EC8AAD164BB"
+    },
+    {
+      "title": "Jubilarehrung",
+      "description": "",
+      "location": "Zunftwirtschaft,  Arminiusstraße 2-4, 10551 Berlin.\n(U-Bhf. Turmstraße, Bus 123 bis Rathaus Tiergarten)",
+      "startDate": "2026-11-13T17:00:00.000Z",
+      "endDate": "2026-11-13T20:00:00.000Z",
+      "uid": "040000008200E00074C5B7101A82E00800000000D6A822C44C53DD010000000000000000100000008F497539585B554FB08D7263EA5748EA"
+    }
+  ],
+  "lastUpdated": "2026-10-03T15:50:25.072Z",
+  "nextUpdate": "2026-10-04T03:50:25.072Z"
 }
